@@ -166,7 +166,7 @@ echo "Name=1C:Enterprise "$VERSION >> "$DESKTOPFILE"
 echo "Icon=1cestart" >> "$DESKTOPFILE"
 
 # Если пользователь согласился на установку:
-if [[ $SETUP != 0 ]]
+if [ $SETUP != 0 ]
     then
         sudo mv "opt/1C/v8.3" "/opt/1C/"v$VERSION
         sudo desktop-file-install "1cestart.$VERSION.desktop"
